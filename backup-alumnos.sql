@@ -90,7 +90,7 @@ ALTER SEQUENCE public."CURSOMATERIA_id_seq" OWNED BY public.cursomateria.id;
 CREATE TABLE public.curso (
     id integer NOT NULL,
     nombre text NOT NULL,
-    "año" integer,
+    "anio" integer,
     letra character(1),
     especialidad text
 );
@@ -249,11 +249,11 @@ INSERT INTO public.alumno (dni, nombre, fecha_nac, genero, curso_id, email) VALU
 -- Data for Name: curso; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
 --
 
-INSERT INTO public.curso (id, nombre, "año", letra, especialidad) VALUES (1, '4A', 4, 'A', 'NR');
-INSERT INTO public.curso (id, nombre, "año", letra, especialidad) VALUES (2, '4C', 4, 'C', 'NR');
-INSERT INTO public.curso (id, nombre, "año", letra, especialidad) VALUES (3, '3A', 3, 'A', 'NR');
-INSERT INTO public.curso (id, nombre, "año", letra, especialidad) VALUES (4, '5B', 5, 'B', 'ME');
-INSERT INTO public.curso (id, nombre, "año", letra, especialidad) VALUES (5, '3A', 3, 'A', 'ME');
+INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (1, '4A', 4, 'A', 'NR');
+INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (2, '4C', 4, 'C', 'NR');
+INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (3, '3A', 3, 'A', 'NR');
+INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (4, '5B', 5, 'B', 'ME');
+INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (5, '3A', 3, 'A', 'ME');
 
 
 --
