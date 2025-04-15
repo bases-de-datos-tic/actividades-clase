@@ -1,5 +1,5 @@
 -- IMPORTANTE!!!
--- Al crear la base de datos, poner como owner a bd-ort-2025_owner
+-- Al crear la base de datos, poner como owner a neondb_owner
 
 --
 -- PostgreSQL database dump
@@ -24,16 +24,17 @@ SET row_security = off;
 
 --
 -- TOC entry 5 (class 2615 OID 2200)
--- Name: public; Type: SCHEMA; Schema: -; Owner: bd-ort-2025_owner
+-- Name: public; Type: SCHEMA; Schema: -; Owner: neondb_owner
 --
 
+CREATE SCHEMA public;
 
-ALTER SCHEMA public OWNER TO "bd-ort-2025_owner";
+ALTER SCHEMA public OWNER TO "neondb_owner";
 
 --
 -- TOC entry 3380 (class 0 OID 0)
 -- Dependencies: 5
--- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: bd-ort-2025_owner
+-- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: neondb_owner
 --
 
 COMMENT ON SCHEMA public IS 'standard public schema';
@@ -45,7 +46,7 @@ SET default_table_access_method = heap;
 
 --
 -- TOC entry 219 (class 1259 OID 49162)
--- Name: cursomateria; Type: TABLE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: cursomateria; Type: TABLE; Schema: public; Owner: neondb_owner
 --
 
 CREATE TABLE public.cursomateria (
@@ -55,11 +56,11 @@ CREATE TABLE public.cursomateria (
 );
 
 
-ALTER TABLE public.cursomateria OWNER TO "bd-ort-2025_owner";
+ALTER TABLE public.cursomateria OWNER TO "neondb_owner";
 
 --
 -- TOC entry 220 (class 1259 OID 49165)
--- Name: CURSOMATERIA_id_seq; Type: SEQUENCE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSOMATERIA_id_seq; Type: SEQUENCE; Schema: public; Owner: neondb_owner
 --
 
 CREATE SEQUENCE public."CURSOMATERIA_id_seq"
@@ -71,12 +72,12 @@ CREATE SEQUENCE public."CURSOMATERIA_id_seq"
     CACHE 1;
 
 
-ALTER SEQUENCE public."CURSOMATERIA_id_seq" OWNER TO "bd-ort-2025_owner";
+ALTER SEQUENCE public."CURSOMATERIA_id_seq" OWNER TO "neondb_owner";
 
 --
 -- TOC entry 3381 (class 0 OID 0)
 -- Dependencies: 220
--- Name: CURSOMATERIA_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSOMATERIA_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: neondb_owner
 --
 
 ALTER SEQUENCE public."CURSOMATERIA_id_seq" OWNED BY public.cursomateria.id;
@@ -84,7 +85,7 @@ ALTER SEQUENCE public."CURSOMATERIA_id_seq" OWNED BY public.cursomateria.id;
 
 --
 -- TOC entry 218 (class 1259 OID 49157)
--- Name: curso; Type: TABLE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: curso; Type: TABLE; Schema: public; Owner: neondb_owner
 --
 
 CREATE TABLE public.curso (
@@ -96,11 +97,11 @@ CREATE TABLE public.curso (
 );
 
 
-ALTER TABLE public.curso OWNER TO "bd-ort-2025_owner";
+ALTER TABLE public.curso OWNER TO "neondb_owner";
 
 --
 -- TOC entry 221 (class 1259 OID 49166)
--- Name: CURSO_id_seq; Type: SEQUENCE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSO_id_seq; Type: SEQUENCE; Schema: public; Owner: neondb_owner
 --
 
 CREATE SEQUENCE public."CURSO_id_seq"
@@ -112,12 +113,12 @@ CREATE SEQUENCE public."CURSO_id_seq"
     CACHE 1;
 
 
-ALTER SEQUENCE public."CURSO_id_seq" OWNER TO "bd-ort-2025_owner";
+ALTER SEQUENCE public."CURSO_id_seq" OWNER TO "neondb_owner";
 
 --
 -- TOC entry 3382 (class 0 OID 0)
 -- Dependencies: 221
--- Name: CURSO_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSO_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: neondb_owner
 --
 
 ALTER SEQUENCE public."CURSO_id_seq" OWNED BY public.curso.id;
@@ -125,7 +126,7 @@ ALTER SEQUENCE public."CURSO_id_seq" OWNED BY public.curso.id;
 
 --
 -- TOC entry 223 (class 1259 OID 49172)
--- Name: materia; Type: TABLE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: materia; Type: TABLE; Schema: public; Owner: neondb_owner
 --
 
 CREATE TABLE public.materia (
@@ -134,11 +135,11 @@ CREATE TABLE public.materia (
 );
 
 
-ALTER TABLE public.materia OWNER TO "bd-ort-2025_owner";
+ALTER TABLE public.materia OWNER TO "neondb_owner";
 
 --
 -- TOC entry 224 (class 1259 OID 49177)
--- Name: MATERIA_id_seq; Type: SEQUENCE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: MATERIA_id_seq; Type: SEQUENCE; Schema: public; Owner: neondb_owner
 --
 
 CREATE SEQUENCE public."MATERIA_id_seq"
@@ -150,12 +151,12 @@ CREATE SEQUENCE public."MATERIA_id_seq"
     CACHE 1;
 
 
-ALTER SEQUENCE public."MATERIA_id_seq" OWNER TO "bd-ort-2025_owner";
+ALTER SEQUENCE public."MATERIA_id_seq" OWNER TO "neondb_owner";
 
 --
 -- TOC entry 3383 (class 0 OID 0)
 -- Dependencies: 224
--- Name: MATERIA_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: bd-ort-2025_owner
+-- Name: MATERIA_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: neondb_owner
 --
 
 ALTER SEQUENCE public."MATERIA_id_seq" OWNED BY public.materia.id;
@@ -163,7 +164,7 @@ ALTER SEQUENCE public."MATERIA_id_seq" OWNED BY public.materia.id;
 
 --
 -- TOC entry 217 (class 1259 OID 49152)
--- Name: alumno; Type: TABLE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: alumno; Type: TABLE; Schema: public; Owner: neondb_owner
 --
 
 CREATE TABLE public.alumno (
@@ -176,11 +177,11 @@ CREATE TABLE public.alumno (
 );
 
 
-ALTER TABLE public.alumno OWNER TO "bd-ort-2025_owner";
+ALTER TABLE public.alumno OWNER TO "neondb_owner";
 
 --
 -- TOC entry 222 (class 1259 OID 49167)
--- Name: especialidad; Type: TABLE; Schema: public; Owner: bd-ort-2025_owner
+-- Name: especialidad; Type: TABLE; Schema: public; Owner: neondb_owner
 --
 
 CREATE TABLE public.especialidad (
@@ -189,11 +190,11 @@ CREATE TABLE public.especialidad (
 );
 
 
-ALTER TABLE public.especialidad OWNER TO "bd-ort-2025_owner";
+ALTER TABLE public.especialidad OWNER TO "neondb_owner";
 
 --
 -- TOC entry 3205 (class 2604 OID 49178)
--- Name: curso id; Type: DEFAULT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: curso id; Type: DEFAULT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.curso ALTER COLUMN id SET DEFAULT nextval('public."CURSO_id_seq"'::regclass);
@@ -201,7 +202,7 @@ ALTER TABLE ONLY public.curso ALTER COLUMN id SET DEFAULT nextval('public."CURSO
 
 --
 -- TOC entry 3206 (class 2604 OID 49179)
--- Name: cursomateria id; Type: DEFAULT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: cursomateria id; Type: DEFAULT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.cursomateria ALTER COLUMN id SET DEFAULT nextval('public."CURSOMATERIA_id_seq"'::regclass);
@@ -209,7 +210,7 @@ ALTER TABLE ONLY public.cursomateria ALTER COLUMN id SET DEFAULT nextval('public
 
 --
 -- TOC entry 3207 (class 2604 OID 49180)
--- Name: materia id; Type: DEFAULT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: materia id; Type: DEFAULT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.materia ALTER COLUMN id SET DEFAULT nextval('public."MATERIA_id_seq"'::regclass);
@@ -218,7 +219,7 @@ ALTER TABLE ONLY public.materia ALTER COLUMN id SET DEFAULT nextval('public."MAT
 --
 -- TOC entry 3367 (class 0 OID 49152)
 -- Dependencies: 217
--- Data for Name: alumno; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
+-- Data for Name: alumno; Type: TABLE DATA; Schema: public; Owner: neondb_owner
 --
 
 INSERT INTO public.alumno (dni, nombre, fecha_nac, genero, curso_id, email) VALUES (41570529, 'Joaquín Rodríguez', '2007-03-26', false, 2, 'joaquin.rodriguez75@hotmail.com');
@@ -246,7 +247,7 @@ INSERT INTO public.alumno (dni, nombre, fecha_nac, genero, curso_id, email) VALU
 --
 -- TOC entry 3368 (class 0 OID 49157)
 -- Dependencies: 218
--- Data for Name: curso; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
+-- Data for Name: curso; Type: TABLE DATA; Schema: public; Owner: neondb_owner
 --
 
 INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (1, '4A', 4, 'A', 'NR');
@@ -259,7 +260,7 @@ INSERT INTO public.curso (id, nombre, "anio", letra, especialidad) VALUES (5, '3
 --
 -- TOC entry 3369 (class 0 OID 49162)
 -- Dependencies: 219
--- Data for Name: cursomateria; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
+-- Data for Name: cursomateria; Type: TABLE DATA; Schema: public; Owner: neondb_owner
 --
 
 INSERT INTO public.cursomateria (id, curso_id, materia_id) VALUES (1, 1, 5);
@@ -292,7 +293,7 @@ INSERT INTO public.cursomateria (id, curso_id, materia_id) VALUES (25, 5, 2);
 --
 -- TOC entry 3372 (class 0 OID 49167)
 -- Dependencies: 222
--- Data for Name: especialidad; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
+-- Data for Name: especialidad; Type: TABLE DATA; Schema: public; Owner: neondb_owner
 --
 
 INSERT INTO public.especialidad (codigo, descripcion) VALUES ('NR', 'TIC');
@@ -303,7 +304,7 @@ INSERT INTO public.especialidad (codigo, descripcion) VALUES ('ME', 'Medios');
 --
 -- TOC entry 3373 (class 0 OID 49172)
 -- Dependencies: 223
--- Data for Name: materia; Type: TABLE DATA; Schema: public; Owner: bd-ort-2025_owner
+-- Data for Name: materia; Type: TABLE DATA; Schema: public; Owner: neondb_owner
 --
 
 INSERT INTO public.materia (id, nombre) VALUES (1, 'Arte 3D');
@@ -319,7 +320,7 @@ INSERT INTO public.materia (id, nombre) VALUES (8, 'Historia');
 --
 -- TOC entry 3384 (class 0 OID 0)
 -- Dependencies: 220
--- Name: CURSOMATERIA_id_seq; Type: SEQUENCE SET; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSOMATERIA_id_seq; Type: SEQUENCE SET; Schema: public; Owner: neondb_owner
 --
 
 SELECT pg_catalog.setval('public."CURSOMATERIA_id_seq"', 1, false);
@@ -328,7 +329,7 @@ SELECT pg_catalog.setval('public."CURSOMATERIA_id_seq"', 1, false);
 --
 -- TOC entry 3385 (class 0 OID 0)
 -- Dependencies: 221
--- Name: CURSO_id_seq; Type: SEQUENCE SET; Schema: public; Owner: bd-ort-2025_owner
+-- Name: CURSO_id_seq; Type: SEQUENCE SET; Schema: public; Owner: neondb_owner
 --
 
 SELECT pg_catalog.setval('public."CURSO_id_seq"', 1, false);
@@ -337,7 +338,7 @@ SELECT pg_catalog.setval('public."CURSO_id_seq"', 1, false);
 --
 -- TOC entry 3386 (class 0 OID 0)
 -- Dependencies: 224
--- Name: MATERIA_id_seq; Type: SEQUENCE SET; Schema: public; Owner: bd-ort-2025_owner
+-- Name: MATERIA_id_seq; Type: SEQUENCE SET; Schema: public; Owner: neondb_owner
 --
 
 SELECT pg_catalog.setval('public."MATERIA_id_seq"', 1, false);
@@ -345,7 +346,7 @@ SELECT pg_catalog.setval('public."MATERIA_id_seq"', 1, false);
 
 --
 -- TOC entry 3209 (class 2606 OID 49182)
--- Name: alumno ALUMNO_pkey; Type: CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: alumno ALUMNO_pkey; Type: CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.alumno
@@ -354,7 +355,7 @@ ALTER TABLE ONLY public.alumno
 
 --
 -- TOC entry 3213 (class 2606 OID 49184)
--- Name: cursomateria CURSOMATERIA_pkey; Type: CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: cursomateria CURSOMATERIA_pkey; Type: CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.cursomateria
@@ -363,7 +364,7 @@ ALTER TABLE ONLY public.cursomateria
 
 --
 -- TOC entry 3211 (class 2606 OID 49186)
--- Name: curso CURSO_pkey; Type: CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: curso CURSO_pkey; Type: CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.curso
@@ -372,7 +373,7 @@ ALTER TABLE ONLY public.curso
 
 --
 -- TOC entry 3215 (class 2606 OID 49188)
--- Name: especialidad ESPECIALIDAD_pkey; Type: CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: especialidad ESPECIALIDAD_pkey; Type: CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.especialidad
@@ -381,7 +382,7 @@ ALTER TABLE ONLY public.especialidad
 
 --
 -- TOC entry 3217 (class 2606 OID 49190)
--- Name: materia MATERIA_pkey; Type: CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: materia MATERIA_pkey; Type: CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.materia
@@ -390,7 +391,7 @@ ALTER TABLE ONLY public.materia
 
 --
 -- TOC entry 3218 (class 2606 OID 49191)
--- Name: alumno curso; Type: FK CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: alumno curso; Type: FK CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.alumno
@@ -399,7 +400,7 @@ ALTER TABLE ONLY public.alumno
 
 --
 -- TOC entry 3220 (class 2606 OID 49196)
--- Name: cursomateria curso; Type: FK CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: cursomateria curso; Type: FK CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.cursomateria
@@ -408,7 +409,7 @@ ALTER TABLE ONLY public.cursomateria
 
 --
 -- TOC entry 3219 (class 2606 OID 49201)
--- Name: curso especialidad; Type: FK CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: curso especialidad; Type: FK CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.curso
@@ -417,7 +418,7 @@ ALTER TABLE ONLY public.curso
 
 --
 -- TOC entry 3221 (class 2606 OID 49206)
--- Name: cursomateria materia; Type: FK CONSTRAINT; Schema: public; Owner: bd-ort-2025_owner
+-- Name: cursomateria materia; Type: FK CONSTRAINT; Schema: public; Owner: neondb_owner
 --
 
 ALTER TABLE ONLY public.cursomateria
@@ -429,20 +430,14 @@ ALTER TABLE ONLY public.cursomateria
 -- Name: DEFAULT PRIVILEGES FOR SEQUENCES; Type: DEFAULT ACL; Schema: public; Owner: cloud_admin
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE cloud_admin IN SCHEMA public GRANT ALL ON SEQUENCES TO neon_superuser WITH GRANT OPTION;
-
 
 --
 -- TOC entry 2062 (class 826 OID 41082)
 -- Name: DEFAULT PRIVILEGES FOR TABLES; Type: DEFAULT ACL; Schema: public; Owner: cloud_admin
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE cloud_admin IN SCHEMA public GRANT ALL ON TABLES TO neon_superuser WITH GRANT OPTION;
-
-
 -- Completed on 2025-04-14 23:47:43 -03
 
 --
 -- PostgreSQL database dump complete
 --
-
